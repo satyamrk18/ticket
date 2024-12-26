@@ -5,36 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ticket</title>
     <style>
+      * {
+        color: white;
+      }
+      body {
+        background-color: black;
+      }
       .container {
+        background-color: black;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 3px solid black;
+        border: 3px solid white;
         height: 250px;
         width: 900px;
         margin: 250px;
+        border-radius: 10px;
+        position: relative;
+      }
+      .container button
+      {
+        position: absolute;
+        color: black;
+        height: 30px;
+        width: 150px;
+        font-size: 18px;
+        left: 62%;
+        bottom: 5px;
+        border-radius: 10px;
         
       }
-      .ticket-1
-      {
+      .ticket-1 {
         width: 70%;
         height: 100%;
       }
-      .ticket-2
-      {
+      .ticket-1 img{
+        height: 100px;
+      }
+      .ticket-1 h1{
+        position: absolute;
+        top:0px;
+        left: 20%;
+        font-size: 50px;
+      }
+      .ticket-1 pre{
+        position: absolute;
+ bottom: 90px;
+ left: 150px;
+ border: 2px solid white;
+ height: 25px;
+ width: 35%;
+ text-align: center;
+ font-size:20px;
+border-radius: 15px;
+    }
+      .ticket-2 {
         height: 100%;
         width: 30%;
-        border-left:2px dashed black;
+        border-left: 2px dashed white;
+      }
+      .ticket-2 img{
+        height: 100px;
+      }
+      .qr-code-1 img {
+        height: 40px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+      }
+      .qr-code-2 img {
+        height: 40px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
       }
     </style>
   </head>
   <body>
     <div class="container">
+        <button>75880 &nbsp;75880</button>
       <div class="ticket-1">
-        <h1>ticket 1</h1>
+        <img src="logo.png">
+        <h1>SVIT DJ NIGHT</h1>
+        <p>Student name:-</p> 
+        <pre>Satyam Raosaheb Katkade</pre>
       </div>
       <div class="ticket-2">
-        <h2>ticket 2</h2>
+        <img src="logo.png">
+      </div>
+      <div class="qr-code-1">
+        <img src="qr_code.jpeg" />
+      </div>
+      <div class="qr-code-2">
+        <img src="qr_code.jpeg" />
       </div>
     </div>
   </body>
