@@ -26,8 +26,7 @@
         background-size: cover;
         background-position: center;
       }
-      .container button
-      {
+      .container button {
         position: absolute;
         color: black;
         height: 30px;
@@ -36,38 +35,39 @@
         left: 62%;
         bottom: 5px;
         border-radius: 10px;
-        
       }
       .ticket-1 {
         width: 70%;
         height: 100%;
       }
-      .ticket-1 img{
+      .ticket-1 img {
         height: 100px;
       }
-      .ticket-1 h1{
+      .ticket-1 h1 {
         position: absolute;
-        top:0px;
+        top: 0px;
         left: 20%;
         font-size: 50px;
+        
       }
-      .ticket-1 pre{
+      .ticket-1 pre {
         position: absolute;
- bottom: 90px;
- left: 150px;
- border: 2px solid white;
- height: 25px;
- width: 35%;
- text-align: center;
- font-size:20px;
-border-radius: 15px;
-    }
+        bottom: 90px;
+        left: 150px;
+        border: 2px solid white;
+        height: 25px;
+        width: 35%;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.548);
+      }
       .ticket-2 {
         height: 100%;
         width: 30%;
-        border-left: 2px dashed white;
+        border-left: 4px dashed white;
       }
-      .ticket-2 img{
+      .ticket-2 img {
         height: 100px;
       }
       .qr-code-1 img {
@@ -82,25 +82,76 @@ border-radius: 15px;
         bottom: 0px;
         left: 0px;
       }
+      .class p {
+        position: absolute;
+        top: 150px;
+        font-size: larger;
+      }
+      p {
+        padding-left: 10px;
+      }
+      .class pre{
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.527);
+      height: 25px;
+      width: 35%;
+      top:150px;
+      display: flex;
+      }
+      .info pre
+      {
+        position: absolute;
+        bottom: 0px;
+        left: 25%;
+        top:180px;
+        font-size: 20px;
+        color: red;
+        font-weight: 900;
+      }
+      .image img 
+      {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: 80px;
+        bottom: 80px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-        <button>75880 &nbsp;75880</button>
+      <button>75880 &nbsp;75880</button>
       <div class="ticket-1">
-        <img src="logo.png">
+        <img src="logo.png" />
         <h1>SVIT DJ NIGHT</h1>
-        <p>Student name:-</p> 
-        <pre>Satyam Raosaheb Katkade</pre>
+        <p>Student name:-</p>
+        <pre style="font-size: larger;">Satyam Raosaheb Katkade</pre>
+        <div class="class">
+          <p>Class:-</p>
+          <pre>
+            T.E. [I.T]
+          </pre>
+        </div>
       </div>
+
       <div class="ticket-2">
-        <img src="logo.png">
+        <img src="logo.png" />
+      </div>
+      <div class="image">
+        <img src="IMG20240628125101.jpg" />
+        
       </div>
       <div class="qr-code-1">
         <img src="qr_code.jpeg" />
       </div>
       <div class="qr-code-2">
         <img src="qr_code.jpeg" />
+      </div>
+      <div class="info">
+        <pre>
+ Time:- 7:00 AM to 01:AM
+ venue:- Collage Ground 
+        </pre>
       </div>
     </div>
   </body>
